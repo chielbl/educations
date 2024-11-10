@@ -1,0 +1,43 @@
+.home-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 144rem;
+  margin: auto;
+  padding: var(--space-default);
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-default);
+  width: 100%;
+  margin-bottom: var(--space-default);
+  text-transform: uppercase;
+}
+
+.heading > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3b82f6;
+  height: 3.2rem;
+  width: 3.2rem;
+  border-radius: var(--radius-full);
+  color: white;
+  box-shadow: var(--shadow-md);
+}
+.heading > a:hover {
+  background-color: #2563eb;
+}
+
+.educations {
+  width: 100%;
+  background-color: white;
+  padding: var(--space-default);
+  box-shadow: var(--shadow-md);
+  border-radius: var(--space-sm);
+  margin: 0 var(--space-default);
+}

@@ -1,0 +1,21 @@
+.edit-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--space-xl);
+  padding: var(--space-default);
+  max-width: 72rem;
+  margin: auto;
+}
+
+.edit-page > h2 {
+  text-transform: uppercase;
+}
+
+.edit-page > div {
+  box-shadow: var(--shadow-md);
+  border-radius: var(--space-sm);
+  background: white;
+  padding: var(--space-default);
+}

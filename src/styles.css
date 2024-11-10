@@ -1,1 +1,118 @@
+@import "primeicons/primeicons.css";
 /* You can add global styles to this file, and also import other style files */
+
+:root {
+  /* Breakpoints */
+  /*
+  phone: '30em', // Phablet => @media (min-width: 480px) { ... }
+  tab: '45em', // Tablet Landscape => @media (min-width: 720px) { ... }
+  desk: '64em', // Desktop => @media (min-width: 720px) { ... }
+  '2k': '90em', // Ultra 2k => @media (min-width: 1440px) { ... }
+  '4k': '135em', // Ultra 4k => @media (min-width: 2160px) { ... }
+  */
+  --text-xs: 1rem;
+  --text-sm: 1.2rem;
+  --text-md: 1.4rem;
+  --text-default: 1.6rem;
+  --text-lg: 1.8rem;
+  --text-xl: 2rem;
+
+  --heading-xs: 2.4rem;
+  --heading-sm: 2.8rem;
+  --heading-md: 3.2rem;
+  --heading-lg: 4rem;
+  --heading-xl: 5.6rem;
+
+  --space-px: 0.1rem;
+  --space-xs: 0.3rem;
+  --space-sm: 0.8rem;
+  --space-md: 1.2rem;
+  --space-default: 1.6rem;
+  --space-lg: 2.4rem;
+  --space-xl: 3.2rem;
+
+  --radius-px: 0.1rem;
+  --radius-xs: 0.2rem;
+  --radius-sm: 0.3rem;
+  --radius-md: 0.8rem;
+  --radius-default: 1.6rem;
+  --radius-lg: 3.2rem;
+  --radius-xl: 6.4rem;
+  --radius-full: 999.9rem;
+
+  --shadow-xs: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --shadow-sm: 0 4px 6px -2px rgba(0, 0, 0, 0.1),
+    0 2px 4px -2px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 12px 16px -4px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-lg: 0 20px 24px -4px rgba(0, 0, 0, 0.1),
+    0 8px 8px -4px rgba(0, 0, 0, 0.04);
+  --shadow-xl: 0 24px 48px -12px rgba(0, 0, 0, 0.25);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  box-sizing: border-box;
+  background-color: #f1f5f9;
+  font-family: sans-serif;
+}
+
+p {
+  font-size: clamp(var(--text-sm), 1vw, var(--text-default));
+}
+
+h1 {
+  font-size: clamp(var(--heading-sm), 5vw, var(--heading-xl));
+}
+
+h2 {
+  font-size: clamp(var(--heading-sm) - 25%, 3vw, var(--heading-sm));
+}
+
+h3 {
+  font-size: clamp(var(--heading-xs), 2vw, var(--heading-xs) + 25%);
+}
+
+h4 {
+  font-size: clamp(var(--heading-xs) - 25%, 1.5vw, var(--heading-xs));
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+input,
+textarea,
+select{
+  background-color: transparent;
+  outline: none;
+  color: inherit;
+}
+input::placeholder {
+  color: inherit;
+}

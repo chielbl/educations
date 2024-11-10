@@ -1,0 +1,11 @@
+<div class="education-list">
+  <ng-container *ngIf="educations | async as educations; else loading">
+    <ng-container *ngIf="educations.length; else noEducations">
+      <div *ngFor="let education of educations">
+        <app-education [education]="education" />
+      </div>
+    </ng-container>
+    <ng-template #noEducations>No educations!</ng-template>
+  </ng-container>
+  <ng-template #loading>loading ...</ng-template>
+</div>

@@ -1,0 +1,40 @@
+.education-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}
+
+.education-form > div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-md);
+}
+.education-form > div:last-of-type {
+  grid-template-columns: 1fr;
+}
+.education-form label {
+  opacity: 0.6;
+}
+.education-form input,
+.education-form select,
+.education-form textarea {
+  padding: var(--space-sm);
+  border: none;
+  border-bottom: 1px solid #d1d5db;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.submit {
+  align-self: stretch;
+  color: white;
+  background-color: #3b82f6;
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--radius-sm);
+}
+.submit:hover {
+  background-color: #2563eb;
+}

@@ -1,0 +1,76 @@
+<form #educationForm="ngForm" (ngSubmit)="submitForm()" class="education-form">
+  <div>
+    <div class="input-group">
+      <label for="schoolName">School name</label>
+      <input
+        id="schoolName"
+        type="text"
+        name="schoolName"
+        [(ngModel)]="educationDetails.schoolName"
+      />
+    </div>
+    <div class="input-group">
+      <label for="educationType">Education type</label>
+      <select
+        id="educationType"
+        name="educationType"
+        [(ngModel)]="educationDetails.educationType"
+      >
+        <option value="" disabled selected>Select education type</option>
+        <option *ngFor="let type of educationTypes" [value]="type">
+          {{ type }}
+        </option>
+      </select>
+    </div>
+  </div>
+  <div>
+    <div class="input-group">
+      <label for="fieldOfStudy">Field of study</label>
+      <input
+        id="fieldOfStudy"
+        type="text"
+        name="fieldOfStudy"
+        [(ngModel)]="educationDetails.fieldOfStudy"
+      />
+    </div>
+    <div class="input-group">
+      <label for="city">City</label>
+      <input
+        id="city"
+        type="text"
+        name="city"
+        [(ngModel)]="educationDetails.city"
+      />
+    </div>
+  </div>
+  <div>
+    <div class="input-group">
+      <label for="startDate">Start date</label>
+      <input
+        id="startDate"
+        type="date"
+        name="startDate"
+        [(ngModel)]="educationDetails.from"
+      />
+    </div>
+    <div class="input-group">
+      <label for="endDate">End date</label>
+      <input
+        id="endDate"
+        type="date"
+        name="endDate"
+        [(ngModel)]="educationDetails.to"
+      />
+    </div>
+  </div>
+  <div>
+    <label for="description">Description</label>
+    <textarea
+      id="description"
+      name="description"
+      [(ngModel)]="educationDetails.description"
+    ></textarea>
+  </div>
+
+  <button type="submit" class="submit">Submit</button>
+</form>

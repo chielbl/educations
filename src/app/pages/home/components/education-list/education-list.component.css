@@ -1,0 +1,10 @@
+.education-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(24rem, 1fr));
+  gap: var(--space-default);
+  
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(auto-fill, minmax(32rem, 1fr));
+    gap: var(--space-xl);
+  }
+}
