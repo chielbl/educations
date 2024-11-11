@@ -1,6 +1,5 @@
 import { CommonModule } from "@angular/common";
 import { Component } from "@angular/core";
-import { Observable } from "rxjs";
 import { Education } from "../../../../_types/Education";
 import { EducationService } from "../../../../services/education.service";
 import { EducationComponent } from "../education/education.component";
@@ -13,7 +12,7 @@ import { EducationComponent } from "../education/education.component";
   styleUrl: "./education-list.component.css",
 })
 export class EducationListComponent {
-  educations: Observable<Education[]> = new Observable<Education[]>();
+  educations: Education[] | null = null;
 
   constructor(private educationService: EducationService) {}
 
@@ -22,7 +21,9 @@ export class EducationListComponent {
   }
 
   fetchEducations() {
-    this.educations = this.educationService.getAll();
+    this.educationService
+      .getAll()
+      .subscribe((data) => (this.educations = data || []));
   }
 }
 

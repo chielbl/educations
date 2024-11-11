@@ -1,11 +1,24 @@
 <div class="education-list">
-  <ng-container *ngIf="educations | async as educations; else loading">
-    <ng-container *ngIf="educations.length; else noEducations">
-      <div *ngFor="let education of educations">
+  @if (educations !== null) {
+    @if (educations.length) {
+      @for (education of educations; track education.id) {
         <app-education [education]="education" />
-      </div>
-    </ng-container>
-    <ng-template #noEducations>No educations!</ng-template>
-  </ng-container>
-  <ng-template #loading>loading ...</ng-template>
+      }
+    } @else {
+      <p>No educations!</p>
+    }
+  } @else {
+    <p>Loading ...</p>
+  }
 </div>
+
+<!--  -->
+<!-- <ng-container *ngIf="educations | async as educations; else loading">
+  <ng-container *ngIf="educations.length; else noEducations">
+    <div *ngFor="let education of educations">
+      <app-education [education]="education" />
+    </div>
+  </ng-container>
+  <ng-template #noEducations>No educations!</ng-template>
+</ng-container>
+<ng-template #loading>loading ...</ng-template> -->

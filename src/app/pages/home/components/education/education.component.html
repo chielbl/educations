@@ -1,5 +1,5 @@
 @if (education) {
-  <a [id]="education.id" href="/edit?id={{education.id}}" class="education">
+  <a [id]="education.id" href="/edit?id={{ education.id }}" class="education">
     <img
       src="https://tr.rbxcdn.com/068b9a7d1dd9b6cc768cfc99b8cd16e7/150/150/Image/Png"
       alt="placeholder"
@@ -7,11 +7,11 @@
     <div class="education_content">
       <div class="education_content_top">
         <h4>{{ education.fieldOfStudy }}</h4>
-        <p>{{ education.schoolName}}</p>
+        <p>{{ education.schoolName }}</p>
       </div>
       <ul>
-        <span>{{fromYear}} - {{toYear}}</span>
-        <li>{{totalYears}} years</li>
+        <span>{{ fromYear }} - {{ toYear }}</span>
+        <li>{{ totalYears }} years</li>
         <li>{{ education.city }}</li>
       </ul>
       <p>{{ education.description }}</p>

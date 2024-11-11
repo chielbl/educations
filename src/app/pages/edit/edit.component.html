@@ -7,12 +7,13 @@
   </div>
 
   <div class="card">
-    <ng-container *ngIf="educationId; else notFound">
+    @if (educationId) {
       <ng-container *ngIf="education | async as education; else loading">
         <app-education-form [education]="education" />
       </ng-container>
       <ng-template #loading>loading ...</ng-template>
-    </ng-container>
-    <ng-template #notFound>No education founded!</ng-template>
+    } @else {
+      <p>No education founded!</p>
+    }
   </div>
 </section>

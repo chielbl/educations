@@ -2,13 +2,13 @@ import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 import { Observable } from "rxjs";
 import { Education } from "../_types/Education";
+import { environment } from "../../environments/environment";
 
 @Injectable({
   providedIn: "root",
 })
 export class EducationService {
-  private apiUrl =
-    "https://frontend-1-dot-lab900-exercises.appspot.com/api/v1/user/1/education";
+  private apiUrl = environment.API_URL;
 
   constructor(private http: HttpClient) {}
 
