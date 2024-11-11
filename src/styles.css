@@ -10,6 +10,11 @@
   '2k': '90em', // Ultra 2k => @media (min-width: 1440px) { ... }
   '4k': '135em', // Ultra 4k => @media (min-width: 2160px) { ... }
   */
+
+  --color-primary: #c4ebeb;
+  --color-primary-light: #edf9f8;
+  --color-primary-dark: #343d55;
+
   --text-xs: 1rem;
   --text-sm: 1.2rem;
   --text-md: 1.4rem;
@@ -71,7 +76,8 @@ body {
   font-size: 1.6rem;
   line-height: 1.6;
   box-sizing: border-box;
-  background-color: #f1f5f9;
+  background-color: var(--color-primary-light);
+  color: var(--color-primary-dark);
   font-family: sans-serif;
 }
 

@@ -22,7 +22,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #3b82f6;
+  background-color: var(--color-primary-dark);
   height: 3.2rem;
   width: 3.2rem;
   border-radius: var(--radius-full);
@@ -30,5 +30,5 @@
   box-shadow: var(--shadow-md);
 }
 .heading > a:hover {
-  background-color: #2563eb;
+  background-color: #7c8c9c;
 }

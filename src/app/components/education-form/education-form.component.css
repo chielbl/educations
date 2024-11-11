@@ -13,7 +13,7 @@
   grid-template-columns: 1fr;
 }
 .education-form label {
-  opacity: 0.6;
+  opacity: 0.7;
 }
 .education-form input,
 .education-form select,
@@ -31,10 +31,10 @@
 .submit {
   align-self: stretch;
   color: white;
-  background-color: #3b82f6;
+  background-color: var(--color-primary-dark);
   padding: var(--space-sm) var(--space-md);
   border-radius: var(--radius-sm);
 }
 .submit:hover {
-  background-color: #2563eb;
+  background-color: #7c8c9c;
 }
