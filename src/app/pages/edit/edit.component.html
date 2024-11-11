@@ -1,6 +1,12 @@
 <section class="edit-page">
-  <h2>Edit your education</h2>
-  <div>
+  <div class="heading">
+    <h2>Edit your education</h2>
+    <button class="delete" (click)="deleteEducation()">
+      <i class="pi pi-trash"></i>
+    </button>
+  </div>
+
+  <div class="card">
     <ng-container *ngIf="educationId; else notFound">
       <ng-container *ngIf="education | async as education; else loading">
         <app-education-form [education]="education" />

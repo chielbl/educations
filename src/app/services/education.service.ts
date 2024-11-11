@@ -31,4 +31,8 @@ export class EducationService {
       headers: { "Content-Type": "application/json" },
     });
   }
+  
+  delete(id: Education["id"]): Observable<void> {
+    return this.http.delete<void>(`${this.apiUrl}/${id}`);
+  }
 }

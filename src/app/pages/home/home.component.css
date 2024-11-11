@@ -32,12 +32,3 @@
 .heading > a:hover {
   background-color: #2563eb;
 }
-
-.educations {
-  width: 100%;
-  background-color: white;
-  padding: var(--space-default);
-  box-shadow: var(--shadow-md);
-  border-radius: var(--space-sm);
-  margin: 0 var(--space-default);
-}

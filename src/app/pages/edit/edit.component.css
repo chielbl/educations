@@ -9,13 +9,12 @@
   margin: auto;
 }
 
-.edit-page > h2 {
+.heading {
+  display: flex;
+  justify-content: space-between;
   text-transform: uppercase;
 }
 
-.edit-page > div {
-  box-shadow: var(--shadow-md);
-  border-radius: var(--space-sm);
-  background: white;
-  padding: var(--space-default);
+.delete {
+  color: red;
 }

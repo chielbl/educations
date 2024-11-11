@@ -12,10 +12,3 @@
 .create-page > h2 {
   text-transform: uppercase;
 }
-
-.create-page > div {
-  box-shadow: var(--shadow-md);
-  border-radius: var(--space-sm);
-  background: white;
-  padding: var(--space-default);
-}

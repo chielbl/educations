@@ -108,11 +108,19 @@ button {
 
 input,
 textarea,
-select{
+select {
   background-color: transparent;
   outline: none;
   color: inherit;
 }
 input::placeholder {
   color: inherit;
+}
+
+.card {
+  box-shadow: var(--shadow-md);
+  border-radius: var(--space-sm);
+  background: white;
+  padding: var(--space-default);
+  width: 100%;
 }
